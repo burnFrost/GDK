@@ -1,3 +1,3 @@
 #include "kernel.h"
-#include "sdl2.h"
+#include "sdl.h"
 #include "physics.h"
