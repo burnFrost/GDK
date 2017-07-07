@@ -37,24 +37,18 @@ using namespace chrono;
 using namespace this_thread;
 
 /*Features:
-FPS*,
 Loops,
 Inverter,
 Terminal, 
 DataConversion, 
 Inventory*, 
-Saving, 
-Loading,
+Saving*, 
+Loading*,
 RandomNumberGenerator
 */
 
 //Object Comparison
 //template <typename T> void function(const T& object)
-
-//FPS
-int setFPS = 60;
-#define frameRate sleep_for(milliseconds(1000/setFPS));
-thread render;
 
 
 
