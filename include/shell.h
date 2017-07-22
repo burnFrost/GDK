@@ -1,20 +1,12 @@
+//Early testing, some things may not work.
+//UNF = Unfinished
+
 //C++ Libs.
 #include <iostream>
 #include <string>
-#include <sstream>
 #include <fstream>
-#include <limits.h>
-#include <tuple>
-#include <chrono>
-#include <thread>
 #include <random>
 
-//C libs.
-#include <cstdio>
-#include <cstdlib>
-#include <cstring>
-#include <cmath>
-#include <ctime>
 
 //glm.
 #include <glm/glm.hpp>
@@ -33,22 +25,13 @@
 
 
 using namespace std;
-using namespace chrono;
-using namespace this_thread;
 
-/*Features:
-Loops,
-Inverter,
-Terminal, 
-DataConversion, 
-Inventory*, 
-Saving*, 
-Loading*,
-RandomNumberGenerator
-*/
 
-//Object Comparison
+
+//Object Comparison. UNF
 //template <typename T> void function(const T& object)
+
+
 
 
 
@@ -56,8 +39,17 @@ RandomNumberGenerator
 #define fastLoop(VALUE) for(int i = 0; i < (VALUE); i++)
 
 
-//Inversion. Just type "var = -var;"
+//Inversion.
 
+int invertInt(int var){
+var = -var;
+return var;
+}
+
+float invertFloat(float var){
+var = -var;
+return var;
+}
 
 //Terminal.
 int numberInput(string text){
@@ -75,13 +67,13 @@ return x;
 //DataConversion.
 #define toStr(NUMBER) to_string((NUMBER))
 
-//Save the game.
+//Save the game. UNF
 #define savefile(FILE) ofstream saving((FILE))
 #define save(DATA) saving << (DATA) << endl
 
 #define saved saving.close();
 
-//Load the game.
+//Load the game. UNF
 #define loadfile(FILE) ifstream loading((FILE))
 #define load(VARIABLE) loading >> VARIABLE
 
@@ -94,8 +86,3 @@ return x;
 int rng(int min, int max){
 int R = min+(rand()%((max++)-min));
 return R;}
-
-
-
-
-
