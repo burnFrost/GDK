@@ -1,5 +1,4 @@
 //Early testing, some things may not work.
-//UNF = Unfinished
 
 //C++ Libs.
 #include <iostream>
@@ -28,7 +27,7 @@ using namespace std;
 
 
 
-//Object Comparison. UNF
+//Object Comparison. WIP
 //template <typename T> void function(const T& object)
 
 
@@ -67,13 +66,13 @@ return x;
 //DataConversion.
 #define toStr(NUMBER) to_string((NUMBER))
 
-//Save the game. UNF
+//Save the game. WIP
 #define savefile(FILE) ofstream saving((FILE))
 #define save(DATA) saving << (DATA) << endl
 
 #define saved saving.close();
 
-//Load the game. UNF
+//Load the game. WIP
 #define loadfile(FILE) ifstream loading((FILE))
 #define load(VARIABLE) loading >> VARIABLE
 
