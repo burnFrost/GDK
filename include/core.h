@@ -52,12 +52,12 @@ using namespace chrono;
 
 
 //Threading.
-#define ct(TYPE) vt.emplace_back(TYPE)
-vector<thread> vt;
+#define vt(TYPE) vecT.emplace_back(TYPE)
+vector<thread> vecT;
 
-void jt() {
+void joinThreads() {
 
-	for (auto &t : vt)
+	for (auto &t : vecT)
 	t.join();
 }
 
