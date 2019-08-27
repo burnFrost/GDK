@@ -50,6 +50,29 @@ using namespace chrono;
 #define input(TEXT, VAR) cout << (TEXT); getline(cin, VAR)
 #define print(TEXT) cout << (TEXT) << endl
 
+
+//Threading.
+#define ct(TYPE) vt.emplace_back(TYPE)
+vector<thread> vt;
+
+void jt() {
+
+	for (auto &t : vt)
+	t.join();
+}
+
+
+/*
+void thread1(){
+	cout << "Hello" << endl;
+}
+int main(){
+thread t1(thread1);
+
+t1.join();
+}
+*/
+
 //Time. Must be in a thread.
 #define sec(TIME) sleep_for(seconds(TIME))
 #define msec(TIME) sleep_for(milliseconds(TIME))
