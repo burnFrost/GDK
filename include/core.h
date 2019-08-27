@@ -55,7 +55,7 @@ using namespace chrono;
 #define vt(TYPE) vecT.emplace_back(TYPE)
 vector<thread> vecT;
 
-void joinThreads() {
+void jvt() {
 
 	for (auto &t : vecT)
 	t.join();
