@@ -5,6 +5,8 @@
 
 using namespace std;
 
+#define ndo(X, Y) data (X); (X).file = (Y);
+
 //Data management
 class data{
     public:
