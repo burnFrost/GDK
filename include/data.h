@@ -21,8 +21,18 @@ class data{
 
         //store value
         void sv(string key, string value){
-        v.push_back(key);
-        v.push_back(value);
+        bool found = false;
+        for(int i = 0; i < v.size(); i = i + 2){
+            if(v[i] == key){
+                v[i] = key;
+                v[i+1] = value;
+                found = true;
+                }
+            }
+        if(found == false){
+            v.push_back(key);
+            v.push_back(value);
+            }
         }
 
         //get value
