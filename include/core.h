@@ -82,15 +82,6 @@ t1.join();
 #define STR(NUMBER) to_string(NUMBER)
 #define INT(TEXT) stoi(TEXT)
 
-//Save the game. 
-#define saveFile(FILE) ofstream saving((FILE))
-#define save(KEY, VAR) saving << (KEY) << endl << (VAR) << endl
-
-#define saved saving.close();
-
-//Load the game. WIP
-#define loadFile(FILE) ifstream loading((FILE))
-#define load(VAR) loading >> VAR
 
 //Random Number Generator.
 #define randomEngine default_random_engine RNG(time(NULL))
