@@ -79,8 +79,8 @@ t1.join();
 
 
 //DataConversion.
-#define STR(NUMBER) to_string(NUMBER)
-#define INT(TEXT) stoi(TEXT)
+#define str(NUMBER) to_string(NUMBER)
+#define num(TEXT) stoi(TEXT)
 
 
 //Random Number Generator.
