@@ -11,15 +11,18 @@ class data{
         string file = "data";
         vector<string> v;
 
+        //clear vector
         void cv(){
         v.clear();
         }
 
+        //store value
         void sv(string key, string value){
         v.push_back(key);
         v.push_back(value);
         }
 
+        //get value
         string gv(string key){
         string value;
         for(int i = 0; i < v.size(); i = i + 2){
