@@ -24,7 +24,6 @@ class data{
         bool found = false;
         for(int i = 0; i < v.size(); i = i + 2){
             if(v[i] == key){
-                v[i] = key;
                 v[i+1] = value;
                 found = true;
                 }
