@@ -22,7 +22,7 @@ class data{
         //store value
         void sv(string key, string value){
         bool found = false;
-        for(int i = 0; i < v.size(); i = i + 2){
+        for(int i = 0; i < v.size(); i+=2){
             if(v[i] == key){
                 v[i+1] = value;
                 found = true;
@@ -37,7 +37,7 @@ class data{
         //get value
         string gv(string key){
         string value;
-        for(int i = 0; i < v.size(); i = i + 2){
+        for(int i = 0; i < v.size(); i+=2){
             if(v[i] == key){
                 value = v[i+1];
                 }
