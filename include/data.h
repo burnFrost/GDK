@@ -57,7 +57,7 @@ class data{
             ifstream f(file);
             string x;
             v.clear();
-            while(f >> x){
+            while(getline(f, x)){
                 v.push_back(x);
             }
         }
