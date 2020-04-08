@@ -34,7 +34,12 @@ using namespace chrono;
 #define fastLoop(VALUE) for(int i = 0; i < (VALUE); i++)
 
 //Terminal.
-#define input(TEXT, VAR) cout << (TEXT); getline(cin, VAR)
+string input(string note){
+	string result;
+	cout << note;
+	getline(cin, result);
+	return result;
+	}
 #define print(TEXT) cout << (TEXT) << endl
 
 
