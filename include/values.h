@@ -1,22 +1,28 @@
+#pragma once
+
+#include <limits>
+
+using namespace std;
+
 //value types
 #define si short int
-#define simax SHRT_MAX
+#define simax numeric_limits<short int>::max()
 
 #define usi unsigned short int
-#define usimax USHRT_MAX
+#define usimax numeric_limits<unsigned short int>::max()
 
-#define intmax INT_MAX
+#define intmax numeric_limits<int>::max()
 
 #define uint unsigned int
-#define uintmax UINT_MAX
+#define uintmax numeric_limits<int>::max()
 
-#define longmax LONG_MAX
+#define longmax numeric_limits<long>::max()
 
 #define ul unsigned long
-#define ulmax ULONG_MAX
+#define ulmax numeric_limits<unsigned long>::max()
 
 #define ll long long
-#define llmax LLONG_MAX
+#define llmax numeric_limits<long long>::max()
 
 #define ull unsigned long long
-#define ullmax ULLONG_MAX
+#define ullmax numeric_limits<unsigned long long>::max()
