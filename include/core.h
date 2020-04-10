@@ -8,9 +8,13 @@
 #include <fstream>
 #include <random>
 #include <cstdlib>
-#include <limits>
-#include <math.h>
 #include <ctime>
+
+//math
+#include <limits>
+#include <float.h>
+#include <stdint.h>
+#include <math.h>
 
 //C++11.
 #include <thread>
@@ -74,8 +78,12 @@ t1.join();
 #define str(NUMBER) to_string(NUMBER)
 #define num(TEXT) stoi(TEXT)
 
-//unsigned long long
+//value types
+#define ll long long
+#define llmax LLONG_MAX
+
 #define ull unsigned long long
+#define ullmax ULLONG_MAX
 
 //max value check
 #define limit(TYPE) numeric_limits<(TYPE)>::max()
