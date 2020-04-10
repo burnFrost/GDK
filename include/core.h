@@ -74,6 +74,15 @@ t1.join();
 #define str(NUMBER) to_string(NUMBER)
 #define num(TEXT) stoi(TEXT)
 
+//unsigned long long
+#define ull unsigned long long
+
+//max value check
+auto limit(TYPE){
+	auto result = numeric_limits<(TYPE)>::max();
+	cout << result << endl;
+	return result;
+	}
 
 //Random Number Generator.
 #define randomEngine default_random_engine RNG(time(NULL))
