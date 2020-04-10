@@ -78,15 +78,6 @@ t1.join();
 #define str(NUMBER) to_string(NUMBER)
 #define num(TEXT) stoi(TEXT)
 
-//value types
-#define ll long long
-#define llmax LLONG_MAX
-
-#define ull unsigned long long
-#define ullmax ULLONG_MAX
-
-//max value check
-#define limit(TYPE) numeric_limits<(TYPE)>::max()
 
 //Random Number Generator.
 #define randomEngine default_random_engine RNG(time(NULL))
