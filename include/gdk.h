@@ -11,6 +11,9 @@
 //Data Management
 #include "data.h"
 
+//Value types
+#include "values.h"
+
 //framework
 
 //#include "sdl2.h"
