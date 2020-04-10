@@ -17,9 +17,9 @@ using namespace std;
 //intmax 2147483647
 #define intmax numeric_limits<int>::max()
 
-//uintmax 2147483647
+//uintmax 4294967295
 #define uint unsigned int
-#define uintmax numeric_limits<int>::max()
+#define uintmax numeric_limits<unsigned int>::max()
 
 //longmax 9223372036854775807
 #define longmax numeric_limits<long>::max()
