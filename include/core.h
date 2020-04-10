@@ -78,7 +78,7 @@ t1.join();
 #define ull unsigned long long
 
 //max value check
-#define limit(TYPE) numeric_limits<(TYPE)>::max();
+#define limit(TYPE) numeric_limits<(TYPE)>::max()
 
 //Random Number Generator.
 #define randomEngine default_random_engine RNG(time(NULL))
